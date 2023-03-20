@@ -43,24 +43,24 @@ function App() {
 
   return (
     <>
-      <div class="button-container-1">
+      <div className="button-container-1">
         <h2>Font: "Inter", sans-serif</h2>
         <h1>Buttons</h1>
         <h2>spoqa</h2>
-        <label for="sm">sm</label>
-        <button class="spoqa-button sm-spoqa">스몰 버튼</button>
+        <label htmlFor="sm">sm</label>
+        <button className="spoqa-button sm-spoqa">스몰 버튼</button>
         <br />
-        <label for="md">md</label>
-        <button class="spoqa-button md-spoqa">미디움 버튼</button>
-        <label for="md">md, disable</label>
-        <button class="spoqa-button md-spoqa" disabled>
+        <label htmlFor="md">md</label>
+        <button className="spoqa-button md-spoqa">미디움 버튼</button>
+        <label htmlFor="md">md, disable</label>
+        <button className="spoqa-button md-spoqa" disabled>
           미디움 버튼
         </button>
         <br />
-        <label for="lg">lg</label>
-        <button class="spoqa-button lg-spoqa">라지 버튼</button>
+        <label htmlFor="lg">lg</label>
+        <button className="spoqa-button lg-spoqa">라지 버튼</button>
       </div>
-      <div class="button-container-2">
+      <div className="button-container-2">
         <h2>ant-design</h2>
         <Radio.Group value={size} onChange={(e) => setSize(e.target.value)}>
           <Radio.Button value="large">Large</Radio.Button>
@@ -154,8 +154,7 @@ function App() {
         <h2>ant-design</h2>
         <Checkbox
           checked={componentDisabled}
-          onChange={(e) => setComponentDisabled(e.target.checked)}
-        >
+          onChange={(e) => setComponentDisabled(e.target.checked)}>
           Form disabled
         </Checkbox>
         <Form
@@ -169,8 +168,7 @@ function App() {
           disabled={componentDisabled}
           style={{
             maxWidth: 600,
-          }}
-        >
+          }}>
           <Form.Item label="Checkbox" name="disabled" valuePropName="checked">
             <Checkbox>Checkbox</Checkbox>
           </Form.Item>
@@ -242,8 +240,7 @@ function App() {
                 <div
                   style={{
                     marginTop: 8,
-                  }}
-                >
+                  }}>
                   Upload
                 </div>
               </div>
